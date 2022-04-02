@@ -1,7 +1,7 @@
 // window.alert('conected ')
 class Predict {
   constructor() {
-    this.url = 'http://localhost:5000/api/extract'
+    this.url = 'http://halaldong.herokuapp.com/api/extract'
   }
   // async updateCity(city){
   //     const cityDets = await this.getCity(city);
