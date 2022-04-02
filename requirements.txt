@@ -10,9 +10,6 @@ cymem==2.0.6
 Flask==2.0.2
 Flask-Cors==3.0.10
 Flask-Markdown==0.3
-google-api-core==2.5.0
-google-auth==2.6.0
-googleapis-common-protos==1.55.0
 gunicorn==20.1.0
 httplib2==0.20.4
 idna==3.3
