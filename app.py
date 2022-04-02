@@ -11,7 +11,7 @@ UPLOAD_FOLDER = "static/uploads/"
 RESULTS_FOLDER = "static/results/"
 ALLOWED_EXTENSIONS = set(["png", "jpg", "jpeg"])
 
-nlp = spacy.load("./models/v8.2")
+nlp = spacy.load("./models/v9.1")
 
 import json
 
