@@ -9,7 +9,6 @@ const ocr = document.querySelector('.ocr')
 const error = document.querySelector('.error')
 
 const predict = new Predict()
-window.alert('conected app.js ')
 
 const updateUI = (data) => {
   const { entitiesResult } = data
