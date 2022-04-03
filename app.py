@@ -17,7 +17,7 @@ from flask_cors import CORS
 
 # HTML_WRAPPER = """<div style=" display: block; border-radius: 0.25rem; padding: 1rem; text-align: left;text-transform: capitalize; font-weight: 200;   justify-content: space-around;text-transform: lowercase; ">{}</div>"""
 
-# from flaskext.markdown import Markdown
+from flaskext.markdown import Markdown
 
 app = Flask(__name__)
 Markdown(app)
@@ -28,8 +28,8 @@ colors = {'HALAL': "#94d6c2", "HARAM": "#ed1a79", "MUSHBOOH":"#ffc526"}
 options = {"ents": ['HALAL', 'HARAM','MUSHBOOH'], "colors": colors}
 
 
-def allowed_file(filename):
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+# def allowed_file(filename):
+#     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route("/", methods=["GET", "POST"])
 @app.route("/home", methods=["GET", "POST"])
