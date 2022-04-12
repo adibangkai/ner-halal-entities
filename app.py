@@ -8,6 +8,7 @@ from PIL import Image, ImageDraw, ExifTags, ImageColor
 from flask_cors import CORS
 from spacy.language import Language
 
+app = Flask(__main__)
 @Language.component("ingredients_rule")
 def ingredients_rule(doc):
   new_ents=[]
@@ -181,4 +182,4 @@ def api_text():
                 )
 
 if __name__ == '__main__':
-  app.run()
+  app.run(debug=True)
