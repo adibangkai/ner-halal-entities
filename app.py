@@ -6,12 +6,33 @@ import boto3
 import os
 from PIL import Image, ImageDraw, ExifTags, ImageColor
 from flask_cors import CORS
+from spacy.language import Language
+
+@Language.component("ingredients_rule")
+def ingredients_rule(doc):
+  new_ents=[]
+  detected_entities=[]
+  not_ing=[]
+  other_entities=[]
+  komposisi = False
+  for ent in doc.ents:
+    if ent.label_ == 'K-KEY':
+        komposisi = True
+    elif ent.label_ in ('HALAL', 'haram', 'mushbooh') and (komposisi==True):
+        detected_entities.append(ent)
+    elif ent.label_ in ('HALAL', 'haram', 'mushbooh') and  (komposisi!=True):
+        not_ing.append(ent)
+    else:
+        other_entities.append(ent)
+  new_ents = detected_entities + other_entities
+  doc.ents = new_ents
+  return doc
 
 UPLOAD_FOLDER = "static/uploads/"
 RESULTS_FOLDER = "static/results/"
 ALLOWED_EXTENSIONS = set(["png", "jpg", "jpeg"])
 
-nlp = spacy.load("./models/v9.1")
+nlp = spacy.load("./models/v11.3")
 
 import json
 
@@ -36,11 +57,9 @@ def allowed_file(filename):
 def upload_page():
     return render_template("index.html")
 
-
-
 def detect_text(photo):
 
-    client=boto3.client('textract')
+    client= boto3.client('textract')
     with open(photo, 'rb') as image:
         response = client.detect_document_text(Document={'Bytes': image.read()})
     bahan=''

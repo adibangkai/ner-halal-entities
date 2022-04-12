@@ -20,7 +20,8 @@ const updateUI = (data) => {
   show.classList.remove('hide')
   loading.classList.add('hide')
   if (entitiesResult.status === 200) {
-    image.innerHTML += `<img src="http://localhost:5000/static/uploads/${entitiesResult.filename}" class='image'>`
+    // image.innerHTML += `<img src="https://554f-114-124-175-166.ngrok.io/static/uploads/${entitiesResult.filename}" class='image'>`
+    image.innerHTML += `<img src="https://halaldong.herokuapp.com/static/uploads/${entitiesResult.filename}" class='image'>`
     ocr.innerHTML += `${entitiesResult.result}`
     entitiesResult.detected_entities.forEach((detected_entities) => {
       food.innerHTML += `
