@@ -1,12 +1,17 @@
-from flask import Flask, request, jsonify, render_template, url_for, make_response, redirect
+from flask import Flask, request, jsonify, render_template
 import spacy
 from spacy import displacy
 from werkzeug.utils import secure_filename
 import boto3
 import os
-from PIL import Image, ImageDraw, ExifTags, ImageColor
 from flask_cors import CORS
 from spacy.language import Language
+from flaskext.markdown import Markdown
+
+app = Flask(__name__)
+Markdown(app)
+
+CORS(app)
 
 @Language.component("ingredients_rule")
 def ingredients_rule(doc):
@@ -33,17 +38,8 @@ RESULTS_FOLDER = "static/results/"
 ALLOWED_EXTENSIONS = set(["png", "jpg", "jpeg"])
 
 nlp = spacy.load("./models/v11.3")
-
-import json
-
 HTML_WRAPPER = """<div style=" display: block; border-radius: 0.25rem; padding: 1rem; text-align: left;text-transform: capitalize; font-weight: 200;   justify-content: space-around;text-transform: lowercase; ">{}</div>"""
 
-from flaskext.markdown import Markdown
-
-app = Flask(__name__)
-Markdown(app)
-
-CORS(app)
 
 colors = {'HALAL': "#94d6c2", "HARAM": "#ed1a79", "MUSHBOOH":"#ffc526"}
 options = {"ents": ['HALAL', 'HARAM','MUSHBOOH'], "colors": colors}
@@ -57,7 +53,6 @@ def upload_page():
     return render_template("index.html")
 
 def detect_text(photo):
-
     client= boto3.client('textract')
     with open(photo, 'rb') as image:
         response = client.detect_document_text(Document={'Bytes': image.read()})
@@ -70,7 +65,6 @@ def detect_text(photo):
             bahan += ' '
 
     return bahan
-
 
 @app.route('/extract',methods=["GET","POST"])
 def extract():
@@ -171,9 +165,6 @@ def api_text():
                 other_entities.append({"name":ent.text ,"entities": ent.label_})
         print(detected_entities)
         return jsonify(
-                    # rawtext=text,
-                    # result=result,
-                    # result_image=result_image,
                     detected_entities=detected_entities,
                     other_entities=other_entities,
                     status=200
