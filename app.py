@@ -8,7 +8,6 @@ from PIL import Image, ImageDraw, ExifTags, ImageColor
 from flask_cors import CORS
 from spacy.language import Language
 
-app = Flask(__main__)
 @Language.component("ingredients_rule")
 def ingredients_rule(doc):
   new_ents=[]
@@ -53,8 +52,8 @@ options = {"ents": ['HALAL', 'HARAM','MUSHBOOH'], "colors": colors}
 def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route("/", methods=["GET", "POST"])
-@app.route("/home", methods=["GET", "POST"])
+@app.route("/", methods=["GET"])
+@app.route("/home", methods=["GET"])
 def upload_page():
     return render_template("index.html")
 
@@ -182,4 +181,4 @@ def api_text():
                 )
 
 if __name__ == '__main__':
-  app.run()
+  app.run(debug=True)
