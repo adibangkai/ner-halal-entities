@@ -12,7 +12,6 @@ app = Flask(__name__)
 Markdown(app)
 
 CORS(app)
-
 @Language.component("ingredients_rule")
 def ingredients_rule(doc):
   new_ents=[]
@@ -23,10 +22,12 @@ def ingredients_rule(doc):
   for ent in doc.ents:
     if ent.label_ == 'K-KEY':
         komposisi = True
-    elif ent.label_ in ('HALAL', 'haram', 'mushbooh') and (komposisi==True):
+    elif ent.label_ in ('HALAL', 'haram', 'syubhat') and (komposisi==True):
         detected_entities.append(ent)
-    elif ent.label_ in ('HALAL', 'haram', 'mushbooh') and  (komposisi!=True):
+    elif ent.label_ in ('HALAL', 'haram', 'syubhat') and  (komposisi!=True):
         not_ing.append(ent)
+    elif ent.label_ == 'S-KEY':
+        komposisi = False
     else:
         other_entities.append(ent)
   new_ents = detected_entities + other_entities
@@ -37,12 +38,13 @@ UPLOAD_FOLDER = "static/uploads/"
 RESULTS_FOLDER = "static/results/"
 ALLOWED_EXTENSIONS = set(["png", "jpg", "jpeg"])
 
-nlp = spacy.load("./models/v11.3")
+
+nlp = spacy.load("./models/v15.2")
 HTML_WRAPPER = """<div style=" display: block; border-radius: 0.25rem; padding: 1rem; text-align: left;text-transform: capitalize; font-weight: 200;   justify-content: space-around;text-transform: lowercase; ">{}</div>"""
 
 
-colors = {'HALAL': "#94d6c2", "HARAM": "#ed1a79", "MUSHBOOH":"#ffc526"}
-options = {"ents": ['HALAL', 'HARAM','MUSHBOOH'], "colors": colors}
+colors = {'HALAL': "#94d6c2", "HARAM": "#ed1a79", "SYUBHAT":"#ffc526"}
+options = {"ents": ['HALAL', 'HARAM','SYUBHAT'], "colors": colors}
 
 
 def allowed_file(filename):
@@ -86,7 +88,7 @@ def extract():
     detected_entities = []
     other_entities = []
     for ent in docx.ents:
-        if ent.label_ in ('HALAL', 'haram', 'mushbooh'):
+        if ent.label_ in ('HALAL', 'haram', 'syubhat'):
             detected_entities.append({"name":ent.text ,"entities": ent.label_})
         else:
             other_entities.append({"name":ent.text ,"entities": ent.label_})
@@ -125,7 +127,7 @@ def api():
             detected_entities = []
             other_entities = []
             for ent in docx.ents:
-                if ent.label_ in ('HALAL', 'haram', 'mushbooh'):
+                if ent.label_ in ('HALAL', 'haram', 'syubhat'):
                     detected_entities.append({"name":ent.text ,"entities": ent.label_})
                 else:
                     other_entities.append({"name":ent.text ,"entities": ent.label_})
@@ -159,7 +161,7 @@ def api_text():
         detected_entities = []
         other_entities = []
         for ent in docx.ents:
-            if ent.label_ in ('HALAL', 'haram', 'mushbooh'):
+            if ent.label_ in ('HALAL', 'haram', 'syubhat'):
                 detected_entities.append({"name":ent.text ,"entities": ent.label_})
             else:
                 other_entities.append({"name":ent.text ,"entities": ent.label_})

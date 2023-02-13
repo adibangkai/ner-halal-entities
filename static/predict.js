@@ -1,8 +1,8 @@
-// window.alert('conected ')
+
 class Predict {
   constructor() {
     // this.url = 'https://554f-114-124-175-166.ngrok.io/api/extract'
-    this.url = 'https://halaldong.herokuapp.com/api/extract'
+    this.url = '/api/extract'
   }
 
   async getEntities(formData) {

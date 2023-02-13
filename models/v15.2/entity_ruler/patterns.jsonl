@@ -1,0 +1,221 @@
+{"label":"K-KEY","pattern":"ingredients"}
+{"label":"K-KEY","pattern":"ingredients:"}
+{"label":"K-KEY","pattern":"komposisi"}
+{"label":"K-KEY","pattern":"komposisi:"}
+{"label":"haram","pattern":"e120"}
+{"label":"haram","pattern":"carminic Acid"}
+{"label":"haram","pattern":"alcohol"}
+{"label":"haram","pattern":"alcohol vinegar"}
+{"label":"haram","pattern":"alkohol"}
+{"label":"haram","pattern":"anjing"}
+{"label":"haram","pattern":"babi"}
+{"label":"haram","pattern":"lemak babi"}
+{"label":"haram","pattern":"ekstrak babi"}
+{"label":"haram","pattern":"ekstrak tulang babi"}
+{"label":"haram","pattern":"extract pork"}
+{"label":"haram","pattern":"bacon"}
+{"label":"haram","pattern":"bacon pork belly"}
+{"label":"haram","pattern":"brewer's yeast extract"}
+{"label":"haram","pattern":"calcium carbonaterice wine"}
+{"label":"haram","pattern":"capsules"}
+{"label":"haram","pattern":"chablis wine"}
+{"label":"haram","pattern":"collagen pork"}
+{"label":"haram","pattern":"darah"}
+{"label":"haram","pattern":"daging babi"}
+{"label":"syubhat","pattern":"digivceride animal"}
+{"label":"syubhat","pattern":"dough conditioners"}
+{"label":"haram","pattern":"ethanol"}
+{"label":"haram","pattern":"ethyl alcohol"}
+{"label":"syubhat","pattern":"fat"}
+{"label":"syubhat","pattern":"fatty acid"}
+{"label":"haram","pattern":"gelatin"}
+{"label":"haram","pattern":"gelatin pork"}
+{"label":"haram","pattern":"glyceride animal"}
+{"label":"haram","pattern":"glycerin animal"}
+{"label":"haram","pattern":"glycerol animal"}
+{"label":"haram","pattern":"ham pork"}
+{"label":"haram","pattern":"hormones animal"}
+{"label":"haram","pattern":"hydrolyzed protein"}
+{"label":"haram","pattern":"lard"}
+{"label":"haram","pattern":"lated ham"}
+{"label":"syubhat","pattern":"lecithin"}
+{"label":"haram","pattern":"marshmallow"}
+{"label":"haram","pattern":"meat pig"}
+{"label":"syubhat","pattern":"monoglycerides"}
+{"label":"syubhat","pattern":"monoglycerides animal"}
+{"label":"haram","pattern":"organic alcohol"}
+{"label":"syubhat","pattern":"pepsin animal"}
+{"label":"syubhat","pattern":"phospholipids animal"}
+{"label":"haram","pattern":"pork"}
+{"label":"haram","pattern":"rice wine"}
+{"label":"haram","pattern":"rice wine vinegar"}
+{"label":"haram","pattern":"roast pork"}
+{"label":"haram","pattern":"sas pork"}
+{"label":"haram","pattern":"sausage"}
+{"label":"haram","pattern":"serrano ham"}
+{"label":"haram","pattern":"shortening animal"}
+{"label":"haram","pattern":"skimmed bacon"}
+{"label":"haram","pattern":"skimmed pork"}
+{"label":"haram","pattern":"skimmed pork belly"}
+{"label":"haram","pattern":"vinegar alcohol"}
+{"label":"haram","pattern":"white wine"}
+{"label":"haram","pattern":"white wine concentrate"}
+{"label":"haram","pattern":"wine"}
+{"label":"haram","pattern":"wine"}
+{"label":"haram","pattern":"wine vinegar"}
+{"label":"syubhat","pattern":"e1405"}
+{"label":"syubhat","pattern":"e1423"}
+{"label":"syubhat","pattern":"e1430"}
+{"label":"syubhat","pattern":"e1441"}
+{"label":"syubhat","pattern":"e1443"}
+{"label":"syubhat","pattern":"e1510"}
+{"label":"syubhat","pattern":"e1517"}
+{"label":"syubhat","pattern":"e1518"}
+{"label":"syubhat","pattern":"e153"}
+{"label":"syubhat","pattern":"e161(g)"}
+{"label":"syubhat","pattern":"e252"}
+{"label":"syubhat","pattern":"e290"}
+{"label":"syubhat","pattern":"e334"}
+{"label":"syubhat","pattern":"e335"}
+{"label":"syubhat","pattern":"e336"}
+{"label":"syubhat","pattern":"e337"}
+{"label":"syubhat","pattern":"e353"}
+{"label":"syubhat","pattern":"e354"}
+{"label":"syubhat","pattern":"e422"}
+{"label":"syubhat","pattern":"e430"}
+{"label":"syubhat","pattern":"e431"}
+{"label":"syubhat","pattern":"e433"}
+{"label":"syubhat","pattern":"e435"}
+{"label":"syubhat","pattern":"e436"}
+{"label":"syubhat","pattern":"e440(a)"}
+{"label":"syubhat","pattern":"e440"}
+{"label":"syubhat","pattern":"e440(b)"}
+{"label":"syubhat","pattern":"e441"}
+{"label":"syubhat","pattern":"e445"}
+{"label":"syubhat","pattern":"e470"}
+{"label":"syubhat","pattern":"e470b"}
+{"label":"syubhat","pattern":"e471"}
+{"label":"syubhat","pattern":"e472"}
+{"label":"syubhat","pattern":"e472(a)"}
+{"label":"syubhat","pattern":"e472(b)"}
+{"label":"syubhat","pattern":"e472(c)"}
+{"label":"syubhat","pattern":"e472(d)"}
+{"label":"syubhat","pattern":"e472(e)"}
+{"label":"syubhat","pattern":"e472f"}
+{"label":"syubhat","pattern":"e473"}
+{"label":"syubhat","pattern":"e474"}
+{"label":"syubhat","pattern":"e475"}
+{"label":"syubhat","pattern":"e476"}
+{"label":"syubhat","pattern":"e477"}
+{"label":"syubhat","pattern":"e478"}
+{"label":"syubhat","pattern":"e479b"}
+{"label":"syubhat","pattern":"e481"}
+{"label":"syubhat","pattern":"e482"}
+{"label":"syubhat","pattern":"e483"}
+{"label":"syubhat","pattern":"e491"}
+{"label":"syubhat","pattern":"e492"}
+{"label":"syubhat","pattern":"e494"}
+{"label":"syubhat","pattern":"e542"}
+{"label":"syubhat","pattern":"e570"}
+{"label":"syubhat","pattern":"e572"}
+{"label":"syubhat","pattern":"e630"}
+{"label":"syubhat","pattern":"e631"}
+{"label":"syubhat","pattern":"e632"}
+{"label":"syubhat","pattern":"e633"}
+{"label":"syubhat","pattern":"e634"}
+{"label":"syubhat","pattern":"e635"}
+{"label":"syubhat","pattern":"e640"}
+{"label":"syubhat","pattern":"e910"}
+{"label":"syubhat","pattern":"e915"}
+{"label":"syubhat","pattern":"e920"}
+{"label":"syubhat","pattern":"e921"}
+{"label":"syubhat","pattern":"enzyme treated starch"}
+{"label":"syubhat","pattern":"acetylated distarch glycerol"}
+{"label":"syubhat","pattern":"distarch glycerine"}
+{"label":"syubhat","pattern":"hydroxy propyl distarch glycerine"}
+{"label":"syubhat","pattern":"hydroxy propyl starch glycerol"}
+{"label":"syubhat","pattern":"ethanol"}
+{"label":"syubhat","pattern":"glyceryl diacetate"}
+{"label":"syubhat","pattern":"glyceryl triacetate"}
+{"label":"syubhat","pattern":"carbon black"}
+{"label":"syubhat","pattern":"canthaxanthin"}
+{"label":"syubhat","pattern":"potassium nitrate"}
+{"label":"syubhat","pattern":"carbon dioxide"}
+{"label":"syubhat","pattern":"l-(+)-tartaric acid"}
+{"label":"syubhat","pattern":"sodium l-(+)-tartrate"}
+{"label":"syubhat","pattern":"cream of tartar"}
+{"label":"syubhat","pattern":"potassium sodium l-(+)-tartrate"}
+{"label":"syubhat","pattern":"metatartaric acid"}
+{"label":"syubhat","pattern":"calcium tartrate"}
+{"label":"syubhat","pattern":"polyoxyethylene"}
+{"label":"syubhat","pattern":"glycerin"}
+{"label":"syubhat","pattern":"polyoxyethylene (8) stearate"}
+{"label":"syubhat","pattern":"polyoxyethylene (40) stearate"}
+{"label":"syubhat","pattern":"tween 80"}
+{"label":"syubhat","pattern":"tween 60"}
+{"label":"syubhat","pattern":"tween 65"}
+{"label":"syubhat","pattern":"pectin"}
+{"label":"syubhat","pattern":"amidated pectin"}
+{"label":"syubhat","pattern":"gelatin"}
+{"label":"syubhat","pattern":"glycerol esters of wood rosin"}
+{"label":"syubhat","pattern":"sodium"}
+{"label":"syubhat","pattern":"potassium"}
+{"label":"syubhat","pattern":"calcium salts of fatty acids"}
+{"label":"syubhat","pattern":"magnesium salts of fatty acids"}
+{"label":"syubhat","pattern":"glyceryl monostearate"}
+{"label":"syubhat","pattern":"acetoglycerides"}
+{"label":"syubhat","pattern":"lactoglycerides"}
+{"label":"syubhat","pattern":"citroglycerides"}
+{"label":"syubhat","pattern":"tartaric acid glycerol esters"}
+{"label":"syubhat","pattern":"acetyltartaric acid glycerol esters"}
+{"label":"syubhat","pattern":"mixed acetic & tartaric acid esters of mono & digl"}
+{"label":"syubhat","pattern":"sucrose esters of fatty acids"}
+{"label":"syubhat","pattern":"sucroglycerides"}
+{"label":"syubhat","pattern":"polyglycerol esters of fatty acids"}
+{"label":"syubhat","pattern":"polyglycerol polyricinoleate"}
+{"label":"syubhat","pattern":"propylene glycol esters of fatty acids"}
+{"label":"syubhat","pattern":"lactylated fatty acid esters"}
+{"label":"syubhat","pattern":"thermally oxidized soya bean oil interacted with m"}
+{"label":"syubhat","pattern":"sodium stearoyl-2 lactylate"}
+{"label":"syubhat","pattern":"calcium stearoyl-2-lactylate"}
+{"label":"syubhat","pattern":"stearyl tartrate"}
+{"label":"syubhat","pattern":"sorbitan monostearate"}
+{"label":"syubhat","pattern":"sorbitan tristearate"}
+{"label":"syubhat","pattern":"sorbitan mono-oleate"}
+{"label":"syubhat","pattern":"edible bone phosphate"}
+{"label":"syubhat","pattern":"stearic acid"}
+{"label":"syubhat","pattern":"magnesium stearate"}
+{"label":"syubhat","pattern":"inosinic acid"}
+{"label":"syubhat","pattern":"sodium 5-inosinate"}
+{"label":"syubhat","pattern":"dipotassium inosinate"}
+{"label":"syubhat","pattern":"calcium inosinate"}
+{"label":"syubhat","pattern":"calcium 5-ribonucleotides"}
+{"label":"syubhat","pattern":"sodium 5-ribonucleotide"}
+{"label":"syubhat","pattern":"glycine & its sodium salt"}
+{"label":"syubhat","pattern":"l-cysteine"}
+{"label":"syubhat","pattern":"esters of colophony"}
+{"label":"syubhat","pattern":"cysteine hydrochloride"}
+{"label":"syubhat","pattern":"l-cystine"}
+{"label":"S-KEY","pattern":"distributed"}
+{"label":"S-KEY","pattern":"produce"}
+{"label":"S-KEY","pattern":"produced"}
+{"label":"S-KEY","pattern":"manufacturing"}
+{"label":"S-KEY","pattern":"di produksi"}
+{"label":"S-KEY","pattern":"manufactured"}
+{"label":"S-KEY","pattern":"diproduksi"}
+{"label":"S-KEY","pattern":"produksi"}
+{"label":"S-KEY","pattern":"product of"}
+{"label":"S-KEY","pattern":"lihat komposisi"}
+{"label":"S-KEY","pattern":"made in"}
+{"label":"S-KEY","pattern":"distribusi"}
+{"label":"S-KEY","pattern":"di distribusikan"}
+{"label":"S-KEY","pattern":"kode produksi"}
+{"label":"S-KEY","pattern":"informasi gizi"}
+{"label":"S-KEY","pattern":"lihat daftar"}
+{"label":"S-KEY","pattern":"cetak tebal"}
+{"label":"S-KEY","pattern":"highlighted"}
+{"label":"S-KEY","pattern":"mengandung alergen"}
+{"label":"S-KEY","pattern":"containing allergens"}
+{"label":"S-KEY","pattern":"contains allergens"}
+{"label":"S-KEY","pattern":"contains allergen"}
+{"label":"S-KEY","pattern":"allergen information"}

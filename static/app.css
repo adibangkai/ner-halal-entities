@@ -11,7 +11,7 @@ body {
   color: #54bab9;
   font-family: 'Kaushan Script', cursive;
   font-size: 4em;
-  margin-top: 15%;
+  margin-top:7.5%;
 }
 
 .image {
@@ -143,7 +143,7 @@ input[type='file']::file-selector-button:hover {
   padding: 1em 1em;
 }
 
-.mushbooh {
+.syubhat {
   color: #3a3a3a;
   background-color: #ebc990;
   padding: 1em 1em;

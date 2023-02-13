@@ -10,6 +10,7 @@ const error = document.querySelector('.error')
 
 const predict = new Predict()
 
+
 const updateUI = (data) => {
   const { entitiesResult } = data
   console.log(entitiesResult)
@@ -17,12 +18,12 @@ const updateUI = (data) => {
   other.innerHTML = ''
   ocr.innerHTML = ''
   image.innerHTML = ''
-  show.classList.remove('hide')
   loading.classList.add('hide')
+  show.classList.remove('hide')
   if (entitiesResult.status === 200) {
     // image.innerHTML += `<img src="https://554f-114-124-175-166.ngrok.io/static/uploads/${entitiesResult.filename}" class='image'>`
-    image.innerHTML += `<img src="https://halaldong.herokuapp.com/static/uploads/${entitiesResult.filename}" class='image'>`
-    ocr.innerHTML += `${entitiesResult.result}`
+    image.innerHTML += `<img src="/static/uploads/${entitiesResult.filename}" class='image'>`
+    // ocr.innerHTML += `${entitiesResult.result}`
     entitiesResult.detected_entities.forEach((detected_entities) => {
       food.innerHTML += `
               <a href="https://www.google.com/search?q=is+${detected_entities.name}+halal" target="_blank"><span class="entitas ${detected_entities.entities}">${detected_entities.name}</span></a>
@@ -38,6 +39,8 @@ const updateUI = (data) => {
 
 form.addEventListener('change', (e) => {
   e.preventDefault()
+  show.classList.add('hide')
+
   let dataFoto = form.file.value
   console.log('data', dataFoto)
   const formData = new FormData(form)
@@ -52,11 +55,14 @@ form.addEventListener('change', (e) => {
 
 formTeks.addEventListener('submit', (e) => {
   e.preventDefault()
+  show.classList.add('hide')
+
   let dataKomposisi = formTeks.komposisi.value
   console.log('data', dataKomposisi)
   const formData = new FormData(formTeks)
   formData.append('rawtext', dataKomposisi)
   loading.classList.remove('hide')
+
   food.innerHTML = ''
   other.innerHTML = ''
   image.innerHTML = ''
