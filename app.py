@@ -56,7 +56,7 @@ def upload_page():
     
 
 def detect_text(photo):
-    client= boto3.client('textract',region_name= os.getenv("REGION"), aws_access_key_id= os.getenv("KUNCI_1"), aws_secret_access_key= os.getenv("KUNCI_2"))
+    client= boto3.client('textract',region_name=os.getenv("REGION"), aws_access_key_id=os.getenv("KUNCI_1"), aws_secret_access_key=os.getenv("KUNCI_2"))
     with open(photo, 'rb') as image:
         response = client.detect_document_text(Document={'Bytes': image.read()})
     bahan=''
