@@ -55,7 +55,7 @@ def upload_page():
     return render_template("index.html")
 
 def detect_text(photo):
-    client= boto3.client('textract',region_name='us-east-2')
+    client= boto3.client('textract',region_name=os.environ.get("REGION"), aws_access_key_id=os.environ.get("KUNCI_1"), aws_secret_access_key=os.environ.get("KUNCI_2"))
     with open(photo, 'rb') as image:
         response = client.detect_document_text(Document={'Bytes': image.read()})
     bahan=''
