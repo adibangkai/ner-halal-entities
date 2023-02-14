@@ -165,3 +165,13 @@ input[type='file']::file-selector-button:hover {
   letter-spacing: 0em;
   margin-bottom: 3em;
 }
+
+.footer{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.show{
+  margin-bottom: 100px;
+}
