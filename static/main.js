@@ -15,10 +15,8 @@ const validateFileType = () => {
   var fileName = document.getElementById("fileName").value;
   var idxDot = fileName.lastIndexOf(".") + 1;
   var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
-  console.log(fileName);
-  if (extFile == "heic" || extFile == "pdf" || extFile == "docx") {
-    console.log("catch");
 
+  if (extFile == "heic" || extFile == "pdf" || extFile == "docx") {
     notif.classList.remove("hide");
   } else if (extFile == "jpg" || extFile == "jpeg" || extFile == "png") {
     form.addEventListener("change", (e) => {
@@ -29,15 +27,12 @@ const validateFileType = () => {
       formData.append("rawtext", dataFoto);
       loading.classList.remove("hide");
       error.classList.add("hide");
-
-      console.log("run");
       predict
         .getEntities(formData)
         .then((data) => updateUI(data))
         .catch((err) => console.log(err));
     });
   } else {
-    console.log("catch error dong");
     notif.classList.remove("hide");
   }
 };
