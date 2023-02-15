@@ -27,6 +27,7 @@ const validateFileType = () => {
       formData.append("rawtext", dataFoto);
       loading.classList.remove("hide");
       error.classList.add("hide");
+      notif.classList.add("hide");
       predict
         .getEntities(formData)
         .then((data) => updateUI(data))
